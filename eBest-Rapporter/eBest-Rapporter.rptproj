@@ -49,8 +49,14 @@
     <Reports>@(Report)</Reports>
   </PropertyGroup>
   <ItemGroup>
+    <DataSet Include="Easy-Ordre-LeveringDato.rsd" />
+  </ItemGroup>
+  <ItemGroup>
     <DataSource Include="eBest.rds" />
     <DataSource Include="InfoEasy.rds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Report Include="Leveringstider.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

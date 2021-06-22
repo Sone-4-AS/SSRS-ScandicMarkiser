@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>InfoEasy</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@FraDato">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@TilDato">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>DateTime</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@OrdreNr">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Int32</rd:DbType>
+        </DataSetParameter>
+        <DataSetParameter Name="@Kunde">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT top(10) * FROM vOrdre WHERE 
+((LeveringDato BETWEEN @FraDato AND @TilDato) 
+OR (Pakkedato BETWEEN  @FraDato AND @TilDato))
+AND (@OrdreNr = '' OR OrdreNr like '%'+@OrdreNr+'%')
+AND (@Kunde = '' OR (Navn like '%'+@Kunde+'%' OR KundeNr like '%'+@Kunde+'%' ))</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Firmanr">
+        <DataField>Firmanr</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Ordrenr">
+        <DataField>Ordrenr</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrdreType">
+        <DataField>OrdreType</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="KreditNota">
+        <DataField>KreditNota</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="Status">
+        <DataField>Status</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="OrdreDato">
+        <DataField>OrdreDato</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="FakturaDato">
+        <DataField>FakturaDato</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ForfallsDato">
+        <DataField>ForfallsDato</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="Fakturanummer">
+        <DataField>Fakturanummer</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="BetalingskodeId">
+        <DataField>BetalingskodeId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="LagerId">
+        <DataField>LagerId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SaksbehandlerId">
+        <DataField>SaksbehandlerId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AvdelingId">
+        <DataField>AvdelingId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="PrisId">
+        <DataField>PrisId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Kontosett">
+        <DataField>Kontosett</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="ValutaKode">
+        <DataField>ValutaKode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Kundenr">
+        <DataField>Kundenr</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Navn">
+        <DataField>Navn</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Navn2">
+        <DataField>Navn2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Adresse1">
+        <DataField>Adresse1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Adresse2">
+        <DataField>Adresse2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Postnr">
+        <DataField>Postnr</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Poststed">
+        <DataField>Poststed</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Land">
+        <DataField>Land</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TelefonPrivat">
+        <DataField>TelefonPrivat</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TelefonArbeid">
+        <DataField>TelefonArbeid</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TelefonMobil">
+        <DataField>TelefonMobil</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="EMail">
+        <DataField>EMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Telefax">
+        <DataField>Telefax</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="KortNavn">
+        <DataField>KortNavn</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="OrgNr">
+        <DataField>OrgNr</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LevNavn">
+        <DataField>LevNavn</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LevAdresse1">
+        <DataField>LevAdresse1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LevAdresse2">
+        <DataField>LevAdresse2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LevPostnr">
+        <DataField>LevPostnr</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LevPoststed">
+        <DataField>LevPoststed</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Kontakt">
+        <DataField>Kontakt</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="LeveringDato">
+        <DataField>LeveringDato</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="Fritekst">
+        <DataField>Fritekst</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Frittfelt1">
+        <DataField>Frittfelt1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Frittfelt2">
+        <DataField>Frittfelt2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Frittfelt3">
+        <DataField>Frittfelt3</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DiverseOrdre">
+        <DataField>DiverseOrdre</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="KredittIndikator">
+        <DataField>KredittIndikator</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="GebyrIndikator">
+        <DataField>GebyrIndikator</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="PostnrKrnota">
+        <DataField>PostnrKrnota</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Factoring">
+        <DataField>Factoring</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="SkalPåSamlefaktura">
+        <DataField>SkalPåSamlefaktura</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ErTerminMal">
+        <DataField>ErTerminMal</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="TerminDetaljLøpenummer">
+        <DataField>TerminDetaljLøpenummer</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProsjektNr">
+        <DataField>ProsjektNr</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ProsjektKontoKostnad">
+        <DataField>ProsjektKontoKostnad</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProsjektKontoInntekt">
+        <DataField>ProsjektKontoInntekt</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProsjektArtInntekt">
+        <DataField>ProsjektArtInntekt</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="ProsjektArtKostnad">
+        <DataField>ProsjektArtKostnad</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="DimensjonA">
+        <DataField>DimensjonA</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DimensjonB">
+        <DataField>DimensjonB</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DimensjonC">
+        <DataField>DimensjonC</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DimensjonD">
+        <DataField>DimensjonD</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OverstyrtRegnskapsÅr">
+        <DataField>OverstyrtRegnskapsÅr</DataField>
+        <rd:TypeName>System.Int16</rd:TypeName>
+      </Field>
+      <Field Name="OverstyrtRegnskapsPeriode">
+        <DataField>OverstyrtRegnskapsPeriode</DataField>
+        <rd:TypeName>System.Byte</rd:TypeName>
+      </Field>
+      <Field Name="RabProsVanligeArtikler">
+        <DataField>RabProsVanligeArtikler</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="RabKoordVanligeArtikler">
+        <DataField>RabKoordVanligeArtikler</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="RabProsTimeArtikler">
+        <DataField>RabProsTimeArtikler</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="RabKoordinimeArtikler">
+        <DataField>RabKoordinimeArtikler</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="BruttoFakturaBeløp">
+        <DataField>BruttoFakturaBeløp</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="NettoGebyrBeløp">
+        <DataField>NettoGebyrBeløp</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="NettoBeløpArtikler">
+        <DataField>NettoBeløpArtikler</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="NettoBeløpTimer">
+        <DataField>NettoBeløpTimer</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AntallTimer">
+        <DataField>AntallTimer</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ValutaKursFaktor">
+        <DataField>ValutaKursFaktor</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="KostverdiTimer">
+        <DataField>KostverdiTimer</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="KostverdiArtikler">
+        <DataField>KostverdiArtikler</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="FrittFelt4Id">
+        <DataField>FrittFelt4Id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FrittFelt5Id">
+        <DataField>FrittFelt5Id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="LeveringId">
+        <DataField>LeveringId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="LeveringNavn">
+        <DataField>LeveringNavn</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="FraktId">
+        <DataField>FraktId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="FraktNavn">
+        <DataField>FraktNavn</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="NettoFraktBeløp">
+        <DataField>NettoFraktBeløp</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="BruttoFraktBeløp">
+        <DataField>BruttoFraktBeløp</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="NettoSpesialAvgift">
+        <DataField>NettoSpesialAvgift</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="BruttoSpesialAvgift">
+        <DataField>BruttoSpesialAvgift</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SelgerId">
+        <DataField>SelgerId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="BruttoBeløpArtikler">
+        <DataField>BruttoBeløpArtikler</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="BruttoBeløpTimer">
+        <DataField>BruttoBeløpTimer</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Pakkedato">
+        <DataField>Pakkedato</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

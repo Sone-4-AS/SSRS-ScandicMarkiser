@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="eBest">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DB2016.scandic.local\EBEST;Initial Catalog=eBest</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>c84e61d9-d7b7-4895-9faf-005a5de4db62</DataSourceID>
+</RptDataSource>

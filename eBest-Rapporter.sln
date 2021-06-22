@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "eBest-Rapporter", "eBest-Rapporter\eBest-Rapporter.rptproj", "{A642EFA6-EA75-400B-9F19-EB2A94CC0680}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.Debug|Default.ActiveCfg = Debug
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.Debug|Default.Build.0 = Debug
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.Debug|Default.Deploy.0 = Debug
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.DebugLocal|Default.Build.0 = DebugLocal
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.Release|Default.ActiveCfg = Release
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.Release|Default.Build.0 = Release
+		{A642EFA6-EA75-400B-9F19-EB2A94CC0680}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62EBA0E5-74EE-4064-9EE8-D834582EB9B3}
+	EndGlobalSection
+EndGlobal

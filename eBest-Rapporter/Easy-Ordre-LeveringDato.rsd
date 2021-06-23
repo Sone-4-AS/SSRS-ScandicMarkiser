@@ -29,7 +29,10 @@
           <rd:DbType>String</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT top(10) * FROM vOrdre WHERE 
+      <CommandText>SELECT *,DatePart(ISO_WEEK ,LeveringDato) as LeveringUke,DatePart(ISO_WEEK ,Pakkedato) as PakkeUke, 
+CASE 
+WHEN IsNumeric(Frittfelt2) = 0 THEN -1 ELSE TRY_CAST(Frittfelt2 AS Int) END AS Ordrestatus
+FROM vOrdre WHERE 
 ((LeveringDato BETWEEN @FraDato AND @TilDato) 
 OR (Pakkedato BETWEEN  @FraDato AND @TilDato))
 AND (@OrdreNr = '' OR OrdreNr like '%'+@OrdreNr+'%')
@@ -383,6 +386,18 @@ AND (@Kunde = '' OR (Navn like '%'+@Kunde+'%' OR KundeNr like '%'+@Kunde+'%' ))<
       <Field Name="Pakkedato">
         <DataField>Pakkedato</DataField>
         <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="LeveringUke">
+        <DataField>LeveringUke</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="PakkeUke">
+        <DataField>PakkeUke</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Ordrestatus">
+        <DataField>Ordrestatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

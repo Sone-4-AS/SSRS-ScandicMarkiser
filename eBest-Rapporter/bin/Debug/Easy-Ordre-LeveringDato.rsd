@@ -29,7 +29,8 @@
           <rd:DbType>String</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT *,DatePart(ISO_WEEK ,LeveringDato) as LeveringUke,DatePart(ISO_WEEK ,Pakkedato) as PakkeUke, 
+      <CommandText>SELECT *,DatePart(ISO_WEEK ,LeveringDato) as LeveringUke,DatePart(ISO_WEEK ,Pakkedato) as PakkeUke,
+CASE WHEN LeveringDato IS NULL THEN DatePart(ISO_WEEK ,Pakkedato) ELSE DatePart(ISO_WEEK ,LeveringDato) END AS LeveringsUkeKombinert,
 CASE 
 WHEN IsNumeric(Frittfelt2) = 0 THEN -1 ELSE TRY_CAST(Frittfelt2 AS Int) END AS Ordrestatus
 FROM vOrdre WHERE 
@@ -393,6 +394,10 @@ AND (@Kunde = '' OR (Navn like '%'+@Kunde+'%' OR KundeNr like '%'+@Kunde+'%' ))<
       </Field>
       <Field Name="PakkeUke">
         <DataField>PakkeUke</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="LeveringsUkeKombinert">
+        <DataField>LeveringsUkeKombinert</DataField>
         <rd:TypeName>System.Int32</rd:TypeName>
       </Field>
       <Field Name="Ordrestatus">

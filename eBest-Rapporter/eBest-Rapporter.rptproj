@@ -50,6 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <DataSet Include="Easy-Ordre-LeveringDato.rsd" />
+    <DataSet Include="eBest-SMSLog.rsd" />
   </ItemGroup>
   <ItemGroup>
     <DataSource Include="eBest.rds" />
@@ -57,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Leveringstider.rdl" />
+    <Report Include="SMSLog.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

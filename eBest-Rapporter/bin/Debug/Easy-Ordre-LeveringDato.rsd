@@ -37,7 +37,8 @@ FROM vOrdre WHERE
 ((LeveringDato BETWEEN @FraDato AND @TilDato) 
 OR (Pakkedato BETWEEN  @FraDato AND @TilDato))
 AND (@OrdreNr = '' OR OrdreNr like '%'+@OrdreNr+'%')
-AND (@Kunde = '' OR (Navn like '%'+@Kunde+'%' OR KundeNr like '%'+@Kunde+'%' ))</CommandText>
+AND (@Kunde = '' OR (Navn like '%'+@Kunde+'%' OR KundeNr like '%'+@Kunde+'%' ))
+AND (AvdelingId&lt;&gt;600)</CommandText>
     </Query>
     <Fields>
       <Field Name="Firmanr">

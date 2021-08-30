@@ -156,6 +156,43 @@ ORDER BY
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="t_departments">
+      <Query>
+        <DataSourceName>eBest</DataSourceName>
+        <CommandText>Select * FROM t_departments</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="Id">
+          <DataField>Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="No">
+          <DataField>No</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Area">
+          <DataField>Area</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ResponsibleUserId">
+          <DataField>ResponsibleUserId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="HasAssemblers">
+          <DataField>HasAssemblers</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="LocationId">
+          <DataField>LocationId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -175,7 +212,7 @@ ORDER BY
                     </Style>
                   </TextRun>
                   <TextRun>
-                    <Value>=Fields!AssemblerName.Value</Value>
+                    <Value>=First(Fields!AssemblerName.Value, "v_orders")</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>16pt</FontSize>
@@ -1385,7 +1422,7 @@ ORDER BY
             <Top>1.84891cm</Top>
             <Left>0.42016cm</Left>
             <Height>1.8cm</Height>
-            <Width>34.42422cm</Width>
+            <Width>34.42423cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1401,7 +1438,7 @@ ORDER BY
           </Border>
         </Style>
       </Body>
-      <Width>34.84438cm</Width>
+      <Width>34.84439cm</Width>
       <Page>
         <PageFooter>
           <Height>1.51342cm</Height>
@@ -1436,16 +1473,23 @@ ORDER BY
     </ReportParameter>
     <ReportParameter Name="FromDate">
       <DataType>DateTime</DataType>
-      <Prompt>From Date</Prompt>
+      <Prompt>Fra Dato:</Prompt>
     </ReportParameter>
     <ReportParameter Name="ToDate">
       <DataType>DateTime</DataType>
-      <Prompt>To Date</Prompt>
+      <Prompt>Til Dato:</Prompt>
     </ReportParameter>
     <ReportParameter Name="DepartmentNo">
       <DataType>String</DataType>
       <Nullable>true</Nullable>
-      <Prompt>Department No</Prompt>
+      <Prompt>Avdeling:</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>t_departments</DataSetName>
+          <ValueField>No</ValueField>
+          <LabelField>No</LabelField>
+        </DataSetReference>
+      </ValidValues>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>

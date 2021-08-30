@@ -273,10 +273,10 @@ ORDER BY
                   <Width>2.10313cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.52645cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>2.47354cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -1357,7 +1357,7 @@ ORDER BY
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SumProductPrice.Value)</Value>
+                                  <Value>=IIf(Fields!Department.Value = "99",Sum(Fields!SumProductPrice.Value),0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
@@ -1422,7 +1422,7 @@ ORDER BY
             <Top>1.84891cm</Top>
             <Left>0.42016cm</Left>
             <Height>1.8cm</Height>
-            <Width>34.42423cm</Width>
+            <Width>34.42422cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1438,7 +1438,7 @@ ORDER BY
           </Border>
         </Style>
       </Body>
-      <Width>34.84439cm</Width>
+      <Width>35.13543cm</Width>
       <Page>
         <PageFooter>
           <Height>1.51342cm</Height>

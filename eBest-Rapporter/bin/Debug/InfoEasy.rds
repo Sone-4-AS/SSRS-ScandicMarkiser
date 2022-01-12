@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="InfoEasy">
-  <ConnectionProperties>
-    <Extension>SQL</Extension>
-    <ConnectString>Data Source=DB2016.scandic.local\INFOEASY;Initial Catalog=InfoEasy</ConnectString>
-  </ConnectionProperties>
-  <DataSourceID>56e924d3-9f6b-47fc-aa52-c2e78200de59</DataSourceID>
-</RptDataSource>

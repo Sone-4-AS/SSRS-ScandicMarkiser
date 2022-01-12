@@ -1406,10 +1406,11 @@ ORDER BY
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SumAssemblyPrice.Value)</Value>
+                                  <Value>=Sum(Fields!AssemblyPricePart.Value)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>0.00;(0.00)</Format>
                                     <Color>=IIf(Me.Value &gt;= 0,"Black","Red")</Color>
                                   </Style>
                                 </TextRun>
@@ -1447,6 +1448,7 @@ ORDER BY
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>0.00;(0.00)</Format>
                                     <Color>=IIf(Me.Value &gt;= 0,"Black","Red")</Color>
                                   </Style>
                                 </TextRun>
@@ -1480,10 +1482,11 @@ ORDER BY
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SumService.Value)</Value>
+                                  <Value>=Sum(Fields!SumServicePart.Value)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>0.00;(0.00)</Format>
                                     <Color>=IIf(Me.Value &gt;= 0,"Black","Red")</Color>
                                   </Style>
                                 </TextRun>
@@ -1521,6 +1524,7 @@ ORDER BY
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>0.00;(0.00)</Format>
                                     <Color>=IIf(Me.Value &gt;= 0,"Black","Red")</Color>
                                   </Style>
                                 </TextRun>
@@ -1583,7 +1587,7 @@ ORDER BY
             <Top>1.84891cm</Top>
             <Left>0.42016cm</Left>
             <Height>1.8cm</Height>
-            <Width>35.57484cm</Width>
+            <Width>35.57486cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1592,7 +1596,7 @@ ORDER BY
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>6.90563cm</Height>
+        <Height>4.15396cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1663,7 +1667,7 @@ ORDER BY
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfRows>1</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

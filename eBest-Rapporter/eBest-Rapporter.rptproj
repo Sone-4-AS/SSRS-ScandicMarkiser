@@ -6,7 +6,7 @@
     <ErrorLevel>2</ErrorLevel>
     <OverwriteDatasets>False</OverwriteDatasets>
     <OverwriteDataSources>False</OverwriteDataSources>
-    <TargetServerVersion>SSRS2016</TargetServerVersion>
+    <TargetServerVersion>SSRS2008R2</TargetServerVersion>
     <Platform>Win32</Platform>
     <TargetReportFolder>eBest-Rapporter</TargetReportFolder>
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Leveringstider.rdl" />
+    <Report Include="Monteringsrapport.rdl" />
     <Report Include="Ordre-eBest-InfoEasy.rdl" />
     <Report Include="SMSLog.rdl" />
   </ItemGroup>

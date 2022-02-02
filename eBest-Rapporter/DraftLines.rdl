@@ -17,7 +17,12 @@
     <DataSet Name="v_order_lines">
       <Query>
         <DataSourceName>Test_ebest</DataSourceName>
-        <CommandText>SELECT * FROM Test_eBest.dbo.v_order_lines</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@OrderId">
+            <Value>=Parameters!OrderId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT * FROM Test_eBest.dbo.v_order_lines WHERE OrderId = (@OrderId)</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -484,7 +489,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -554,20 +558,8 @@
   </ReportSections>
   <ReportParameters>
     <ReportParameter Name="OrderId">
-      <DataType>Integer</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>1101372</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>OrderId</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>v_order_lines</DataSetName>
-          <ValueField>OrderId</ValueField>
-          <LabelField>OrderId</LabelField>
-        </DataSetReference>
-      </ValidValues>
+      <DataType>String</DataType>
+      <Prompt>Order Id</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>

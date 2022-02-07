@@ -64,6 +64,7 @@
     <Report Include="Monteringsrapport.rdl" />
     <Report Include="Ordre-eBest-InfoEasy.rdl" />
     <Report Include="SMSLog.rdl" />
+    <Report Include="TilbudsOrdre.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

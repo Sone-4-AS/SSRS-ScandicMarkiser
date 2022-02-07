@@ -387,7 +387,7 @@ WHERE
             <Top>32.61197cm</Top>
             <Left>0.40028cm</Left>
             <Height>2.91042cm</Height>
-            <Width>20.97021cm</Width>
+            <Width>20.5cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -668,7 +668,7 @@ WHERE
             <Top>35.76933cm</Top>
             <Left>0.40028cm</Left>
             <Height>5.26521cm</Height>
-            <Width>20.97021cm</Width>
+            <Width>20.5cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -698,8 +698,8 @@ WHERE
                 </Paragraphs>
                 <rd:DefaultName>Textbox28</rd:DefaultName>
                 <Top>0.26458cm</Top>
-                <Left>0.73434cm</Left>
-                <Height>0.6cm</Height>
+                <Left>0.67478cm</Left>
+                <Height>0.56472cm</Height>
                 <Width>19.29776cm</Width>
                 <Style>
                   <Border>
@@ -726,14 +726,15 @@ WHERE
                 </Style>
               </Line>
               <Subreport Name="Subreport1">
-                <ReportName>/TestDraftLines</ReportName>
+                <ReportName>/Test rapporter/TestDraftLines</ReportName>
                 <Parameters>
                   <Parameter Name="OrderId">
                     <Value>=Sum(Fields!Id.Value, "Draft_orderHead")</Value>
                   </Parameter>
                 </Parameters>
-                <Top>0.86458cm</Top>
-                <Left>0.67482cm</Left>
+                <OmitBorderOnPageBreak>true</OmitBorderOnPageBreak>
+                <Top>0.93514cm</Top>
+                <Left>0.64508cm</Left>
                 <Height>2.46062cm</Height>
                 <Width>19.38702cm</Width>
                 <ZIndex>2</ZIndex>
@@ -772,8 +773,8 @@ WHERE
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>SoldByName</rd:DefaultName>
-                <Top>3.50159cm</Top>
-                <Left>0.73434cm</Left>
+                <Top>3.46631cm</Top>
+                <Left>0.64502cm</Left>
                 <Height>0.6cm</Height>
                 <Width>19.3275cm</Width>
                 <ZIndex>3</ZIndex>
@@ -790,10 +791,10 @@ WHERE
               </Textbox>
             </ReportItems>
             <KeepTogether>true</KeepTogether>
-            <Top>42.41093cm</Top>
+            <Top>41.54635cm</Top>
             <Left>0.40028cm</Left>
             <Height>4.60375cm</Height>
-            <Width>21cm</Width>
+            <Width>20.5cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -858,49 +859,34 @@ WHERE
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Rectangle Name="Rectangle1">
-            <ReportItems>
-              <Subreport Name="sales_terms">
-                <ReportName>/Test rapporter/Sales_terms</ReportName>
-                <Top>0cm</Top>
-                <Left>0cm</Left>
-                <Height>5.15938cm</Height>
-                <Width>21.37049cm</Width>
-                <Style>
-                  <Border>
-                    <Style>None</Style>
-                  </Border>
-                </Style>
-              </Subreport>
-            </ReportItems>
-            <KeepTogether>true</KeepTogether>
-            <Top>47.55103cm</Top>
-            <Left>0.02979cm</Left>
-            <Height>5.15938cm</Height>
-            <Width>21.37049cm</Width>
-            <ZIndex>4</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <BackgroundColor>White</BackgroundColor>
-            </Style>
-          </Rectangle>
           <Image Name="forside">
             <Source>Embedded</Source>
             <Value>ID20210709GammelttilbudgittGlennOve</Value>
             <Sizing>Fit</Sizing>
-            <Top>0.28787cm</Top>
+            <Top>0.25292cm</Top>
             <Left>0.40028cm</Left>
-            <Height>27cm</Height>
-            <Width>21cm</Width>
-            <ZIndex>5</ZIndex>
+            <Height>26.94708cm</Height>
+            <Width>20.89688cm</Width>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Image>
+          <Subreport Name="sales_terms">
+            <ReportName>/Test rapporter/Sales_terms</ReportName>
+            <Top>46.57207cm</Top>
+            <Left>0.40028cm</Left>
+            <Height>5.15938cm</Height>
+            <Width>20.5cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Subreport>
         </ReportItems>
         <Height>55.08173cm</Height>
         <Style>
@@ -912,8 +898,8 @@ WHERE
       </Body>
       <Width>21.75219cm</Width>
       <Page>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
+        <PageHeight>30cm</PageHeight>
+        <PageWidth>24cm</PageWidth>
         <LeftMargin>0.1cm</LeftMargin>
         <RightMargin>0.1cm</RightMargin>
         <TopMargin>0.1cm</TopMargin>

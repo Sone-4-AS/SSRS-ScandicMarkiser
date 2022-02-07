@@ -7,6 +7,7 @@
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString>Data Source=db2016.scandic.local\EBEST;Initial Catalog=Test_eBest</ConnectString>
+        <Prompt>Specify a user name and password for data source Test_ebest:</Prompt>
       </ConnectionProperties>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>eab5adf0-b8eb-4b1b-9816-9d1c85c8b503</rd:DataSourceID>
@@ -169,6 +170,7 @@ FROM
                   <TextRun>
                     <Value>1. Anvendelse</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -181,7 +183,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID1_ANVENDELSE.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -190,7 +194,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -200,6 +206,7 @@ FROM
                   <TextRun>
                     <Value>2. Betalingvilkår</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -212,7 +219,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID2_BETALINGSVILKÅR.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -221,7 +230,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -231,6 +242,7 @@ FROM
                   <TextRun>
                     <Value>3. Salgspant / eiendomsforhold</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -243,7 +255,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID3_SALGSPANT___EIENDOMSFORHOLD.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -252,7 +266,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -262,6 +278,7 @@ FROM
                   <TextRun>
                     <Value>4. Leveringstid</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -274,7 +291,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID4_LEVERINGSTID.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -283,7 +302,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -293,6 +314,7 @@ FROM
                   <TextRun>
                     <Value>5. FORSINKET LEVERING – FRITAKELSE</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -305,7 +327,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID5_FORSINKET_LEVERING___FRITAKELSE.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -314,7 +338,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -324,6 +350,7 @@ FROM
                   <TextRun>
                     <Value>6. AVBESTILLING</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -336,7 +363,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID6_AVBESTILLING.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -345,7 +374,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -355,6 +386,7 @@ FROM
                   <TextRun>
                     <Value>7. ANGRERETT</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -367,7 +399,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID7_ANGRERETT.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -376,7 +410,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -386,6 +422,7 @@ FROM
                   <TextRun>
                     <Value>8. ANSVARSFORHOLD</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -398,7 +435,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID8_ANSVARSFORHOLD.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -407,7 +446,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -417,6 +458,7 @@ FROM
                   <TextRun>
                     <Value>9. TVISTER</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -429,7 +471,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID9_TVISTER.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -438,7 +482,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -448,6 +494,7 @@ FROM
                   <TextRun>
                     <Value>10. FREMFØRING OG TILKOBLING AV STRØM</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -460,7 +507,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID10_FREMFØRING_OG_TILKOBLING_AV_STRØM.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -469,7 +518,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -479,6 +530,7 @@ FROM
                   <TextRun>
                     <Value>11. REKLAMASJON OG MANGLER</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -491,17 +543,19 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID11_REKLAMASJON_OG_MANGLER.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0.81703cm</Top>
-            <Left>0.92287cm</Left>
-            <Height>21cm</Height>
-            <Width>9cm</Width>
+            <Top>0.5cm</Top>
+            <Left>0.34862cm</Left>
+            <Height>17.48646cm</Height>
+            <Width>9.3175cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -521,6 +575,7 @@ FROM
                   <TextRun>
                     <Value>12. REFERANSEBILDE</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -533,7 +588,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID12_REFERANSEBILDE.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -542,7 +599,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -552,6 +611,7 @@ FROM
                   <TextRun>
                     <Value>13. GDPR - PERSONVERN</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -564,7 +624,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID13_GDPR___PERSONVERN.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -573,7 +635,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -583,6 +647,7 @@ FROM
                   <TextRun>
                     <Value>14. NYHETSBREV</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -595,7 +660,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID14_NYHETSBREV.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -604,7 +671,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -614,6 +683,7 @@ FROM
                   <TextRun>
                     <Value>15. VIKTIG INFORMASJON OM SELGERS </Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -627,6 +697,7 @@ FROM
                   <TextRun>
                     <Value>PRODUKTER OG MONTERINGEN</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -640,6 +711,7 @@ FROM
                   <TextRun>
                     <Value />
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -653,6 +725,7 @@ FROM
                   <TextRun>
                     <Value>15.1 BRUK AV PRODUKTER</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -665,7 +738,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID15_1_BRUK_AV_PRODUKTER.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -674,7 +749,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -684,6 +761,7 @@ FROM
                   <TextRun>
                     <Value>15.2 DUKER TIL SCREEN OG MARKISER</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -696,7 +774,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID15_2_DUKER_TIL_SCREEN_OG_MARKISER.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -705,7 +785,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -715,6 +797,7 @@ FROM
                   <TextRun>
                     <Value>15.3 SOLSKJERMING OG GLASSKADER</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -727,7 +810,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID15_3_SOLSKJERMING_OG_GLASSKADER.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -736,7 +821,9 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value />
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
@@ -746,6 +833,7 @@ FROM
                   <TextRun>
                     <Value>15.4MONTERING OG LEVERING</Value>
                     <Style>
+                      <FontSize>6pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -758,17 +846,19 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Value>=Fields!ID15_4MONTERING_OG_LEVERING.Value</Value>
-                    <Style />
+                    <Style>
+                      <FontSize>6pt</FontSize>
+                    </Style>
                   </TextRun>
                 </TextRuns>
                 <Style />
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0.81703cm</Top>
-            <Left>10.90084cm</Left>
-            <Height>20cm</Height>
-            <Width>9cm</Width>
+            <Top>0.5cm</Top>
+            <Left>9.84251cm</Left>
+            <Height>17.48646cm</Height>
+            <Width>9.55563cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -781,31 +871,23 @@ FROM
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>29.95613cm</Height>
+        <Height>29cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
           </Border>
         </Style>
       </Body>
-      <Width>21.51062cm</Width>
+      <Width>20.13897cm</Width>
       <Page>
-        <PageFooter>
-          <Height>0.98425cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
-        <LeftMargin>2.54cm</LeftMargin>
-        <RightMargin>2.54cm</RightMargin>
-        <TopMargin>2.54cm</TopMargin>
-        <BottomMargin>2.54cm</BottomMargin>
+        <InteractiveHeight>28cm</InteractiveHeight>
+        <InteractiveWidth>20.5cm</InteractiveWidth>
+        <LeftMargin>0.1cm</LeftMargin>
+        <RightMargin>0.1cm</RightMargin>
+        <TopMargin>0.1cm</TopMargin>
+        <BottomMargin>0.1cm</BottomMargin>
         <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>

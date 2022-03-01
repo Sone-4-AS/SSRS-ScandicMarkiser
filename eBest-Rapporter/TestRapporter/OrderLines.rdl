@@ -4,10 +4,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="Test_ebest">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=db2016.scandic.local\EBEST;Initial Catalog=Test_eBest</ConnectString>
-      </ConnectionProperties>
+      <DataSourceReference>/Test rapporter/Test_eBest</DataSourceReference>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>e15252b5-942f-4fb4-ae8d-b0b11a27838c</rd:DataSourceID>
     </DataSource>
@@ -26,14 +23,14 @@
       </Query>
       <Fields>
         <Field Name="PriceIncVAT">
-          <Value>=Fields!Price.Value*1.25</Value>
+          <Value>=Fields!LinePrice.Value*Fields!Quantity.Value*1.25</Value>
         </Field>
         <Field Name="Id">
           <DataField>Id</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="VATPrice">
-          <Value>=Fields!Price.Value*0.25</Value>
+          <Value>=Fields!LinePrice.Value*0.25</Value>
         </Field>
         <Field Name="OrderId">
           <DataField>OrderId</DataField>
@@ -186,27 +183,24 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>5.9131cm</Width>
+                  <Width>9.0881cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.55652cm</Width>
+                  <Width>1.53006cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.0027cm</Width>
+                  <Width>2.52645cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.44709cm</Width>
+                  <Width>1.83855cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.76007cm</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>3.90229cm</Width>
+                  <Width>4.85479cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.99922cm</Height>
+                  <Height>1.15797cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -220,7 +214,7 @@
                                   <Value>Artikkel tekst</Value>
                                   <Style>
                                     <FontFamily>Bahnschrift</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -258,11 +252,13 @@
                                   <Value>Antall</Value>
                                   <Style>
                                     <FontFamily>Bahnschrift</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox3</rd:DefaultName>
@@ -293,7 +289,30 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Pris </Value>
+                                  <Value>Listepris inkl.</Value>
+                                  <Style>
+                                    <FontFamily>Bahnschrift</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>N</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>MVA</Value>
+                                  <Style>
+                                    <FontFamily>Bahnschrift</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <Format>N</Format>
+                                  </Style>
+                                </TextRun>
+                                <TextRun>
+                                  <Value xml:space="preserve"> </Value>
                                   <Style>
                                     <FontFamily>Bahnschrift</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -302,7 +321,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -337,56 +356,30 @@
                                   <Value>Rabatt</Value>
                                   <Style>
                                     <FontFamily>Bahnschrift</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>%</Value>
+                                  <Style>
+                                    <FontFamily>Bahnschrift</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox24</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <VerticalAlign>Bottom</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="Textbox41">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>MVA</Value>
-                                  <Style>
-                                    <FontFamily>Bahnschrift</FontFamily>
-                                    <FontSize>14pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox41</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -414,10 +407,24 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Pris m MVA</Value>
+                                  <Value>Pris inkl.</Value>
                                   <Style>
                                     <FontFamily>Bahnschrift</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value> MVA</Value>
+                                  <Style>
+                                    <FontFamily>Bahnschrift</FontFamily>
+                                    <FontSize>12pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -534,7 +541,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Price.Value</Value>
+                                  <Value>=Fields!ListPrice.Value*1.25</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>#,0.00 'kr';(#,0.00 'kr')</Format>
@@ -557,7 +564,6 @@
                             </Border>
                             <BottomBorder>
                               <Color>Black</Color>
-                              <Style>None</Style>
                               <Width>1pt</Width>
                             </BottomBorder>
                             <BackgroundColor>=IIF(ROWNUMBER(NOTHING) MOD 2,"WhiteSmoke" , "")</BackgroundColor>
@@ -579,7 +585,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIf(Fields!LinePrice.Value&lt;&gt;Fields!ListPrice.Value,Fields!LinePrice.Value/IIf(Fields!ListPrice.Value=0,1,Fields!ListPrice.Value),0)</Value>
+                                  <Value>=IIf(Fields!LinePrice.Value&lt;&gt;Fields!ListPrice.Value,(Fields!ListPrice.Value-Fields!LinePrice.Value) / IIf(Fields!ListPrice.Value=0,1,Fields!ListPrice.Value),0)</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>0%</Format>
@@ -587,7 +593,7 @@
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Center</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -604,50 +610,6 @@
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="VATPrice">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!VATPrice.Value</Value>
-                                  <Style>
-                                    <FontFamily>Arial</FontFamily>
-                                    <Format>#,0.00 'kr';(#,0.00 'kr')</Format>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>VATPrice</rd:DefaultName>
-                          <Visibility>
-                            <Hidden>=IIf(Fields!ShowSalesPrice.Value=False,True,False)</Hidden>
-                          </Visibility>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>None</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <BackgroundColor>=IIF(ROWNUMBER(NOTHING) MOD 2,"WhiteSmoke" , "")</BackgroundColor>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                            <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -683,7 +645,6 @@
                             </Border>
                             <BottomBorder>
                               <Color>Black</Color>
-                              <Style>None</Style>
                               <Width>1pt</Width>
                             </BottomBorder>
                             <BackgroundColor>=IIF(ROWNUMBER(NOTHING) MOD 2,"WhiteSmoke" , "")</BackgroundColor>
@@ -730,10 +691,9 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>5</ColSpan>
+                        <ColSpan>4</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -808,10 +768,9 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>5</ColSpan>
+                        <ColSpan>4</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -887,10 +846,9 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>5</ColSpan>
+                        <ColSpan>4</ColSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell />
                     <TablixCell />
                     <TablixCell />
                     <TablixCell />
@@ -931,7 +889,6 @@
                             <BottomBorder>
                               <Color>Black</Color>
                               <Style>Double</Style>
-                              <Width>2pt</Width>
                             </BottomBorder>
                             <BackgroundColor>#ffd600</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -949,7 +906,6 @@
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
-                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -993,9 +949,9 @@
               </SortExpression>
             </SortExpressions>
             <Top>0.73766cm</Top>
-            <Left>0.36726cm</Left>
-            <Height>3.39922cm</Height>
-            <Width>19.58177cm</Width>
+            <Left>0.6583cm</Left>
+            <Height>3.55797cm</Height>
+            <Width>19.83795cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1010,7 +966,7 @@
           </Border>
         </Style>
       </Body>
-      <Width>20.42528cm</Width>
+      <Width>22.58132cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -1048,5 +1004,6 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportServerUrl>http://backoffice.scandic.local/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>b1e56c84-f871-43e8-a322-35673f690490</rd:ReportID>
 </Report>

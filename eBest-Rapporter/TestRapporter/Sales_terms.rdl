@@ -18,29 +18,29 @@
       <Query>
         <DataSourceName>Test_ebest</DataSourceName>
         <CommandText>SELECT
-  t_scandic_sales_terms.Id
-  ,t_scandic_sales_terms.ValidFrom
-  ,t_scandic_sales_terms.[1. ANVENDELSE]
-  ,t_scandic_sales_terms.[2. BETALINGSVILKÅR]
-  ,t_scandic_sales_terms.[3. SALGSPANT – EIENDOMSFORHOLD]
-  ,t_scandic_sales_terms.[4. LEVERINGSTID]
-  ,t_scandic_sales_terms.[5. FORSINKET LEVERING – FRITAKELSE]
-  ,t_scandic_sales_terms.[6. AVBESTILLING]
-  ,t_scandic_sales_terms.[7. ANGRERETT]
-  ,t_scandic_sales_terms.[8. ANSVARSFORHOLD]
-  ,t_scandic_sales_terms.[9. TVISTER]
-  ,t_scandic_sales_terms.[10. FREMFØRING OG TILKOBLING AV STRØM]
-  ,t_scandic_sales_terms.[11. REKLAMASJON OG MANGLER]
-  ,t_scandic_sales_terms.[12. REFERANSEBILDE]
-  ,t_scandic_sales_terms.[13. GDPR - PERSONVERN]
-  ,t_scandic_sales_terms.[14. NYHETSBREV]
-  ,t_scandic_sales_terms.[15.VIKTIG INFORMASJON OM SELGERS PRODUKTER OG MONTERINGEN]
-  ,t_scandic_sales_terms.[15.1 BRUK AV PRODUKTER]
-  ,t_scandic_sales_terms.[15.2 DUKER TIL SCREEN OG MARKISER]
-  ,t_scandic_sales_terms.[15.3 SOLSKJERMING OG GLASSKADER]
-  ,t_scandic_sales_terms.[15.4MONTERING OG LEVERING]
-FROM
-  t_scandic_sales_terms</CommandText>
+	Id
+   ,ValidFrom
+   ,[1. ANVENDELSE]
+   ,[2. BETALINGSVILKÅR]
+   ,[3. SALGSPANT – EIENDOMSFORHOLD]
+   ,[4. LEVERINGSTID]
+   ,[5. FORSINKET LEVERING – FRITAKELSE]
+   ,[6. AVBESTILLING]
+   ,[7. ANGRERETT]
+   ,[8. ANSVARSFORHOLD]
+   ,[9. TVISTER]
+   ,[10. FREMFØRING OG TILKOBLING AV STRØM]
+   ,[11. REKLAMASJON OG MANGLER]
+   ,[12. REFERANSEBILDE]
+   ,[13. GDPR - PERSONVERN]
+   ,[14. NYHETSBREV]
+   ,[15. BRUK AV PRODUKTER]
+   ,[16. DUKER TIL SCREEN OG MARKISER]
+   ,[17. SOLSKJERMING OG GLASSKADER]
+   ,[18. MONTERING OG LEVERING]
+   ,ActiveSalesTerms
+FROM dbo.v_scandic_sales_terms
+WHERE ActiveSalesTerms = 1</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
             <SelectedColumns>
@@ -134,25 +134,25 @@ FROM
           <DataField>14. NYHETSBREV</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID15_VIKTIG_INFORMASJON_OM_SELGERS_PRODUKTER_OG_MONTERINGEN">
-          <DataField>15.VIKTIG INFORMASJON OM SELGERS PRODUKTER OG MONTERINGEN</DataField>
+        <Field Name="ID15__BRUK_AV_PRODUKTER">
+          <DataField>15. BRUK AV PRODUKTER</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID15_1_BRUK_AV_PRODUKTER">
-          <DataField>15.1 BRUK AV PRODUKTER</DataField>
+        <Field Name="ID16__DUKER_TIL_SCREEN_OG_MARKISER">
+          <DataField>16. DUKER TIL SCREEN OG MARKISER</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID15_2_DUKER_TIL_SCREEN_OG_MARKISER">
-          <DataField>15.2 DUKER TIL SCREEN OG MARKISER</DataField>
+        <Field Name="ID17__SOLSKJERMING_OG_GLASSKADER">
+          <DataField>17. SOLSKJERMING OG GLASSKADER</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID15_3_SOLSKJERMING_OG_GLASSKADER">
-          <DataField>15.3 SOLSKJERMING OG GLASSKADER</DataField>
+        <Field Name="ID18__MONTERING_OG_LEVERING">
+          <DataField>18. MONTERING OG LEVERING</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ID15_4MONTERING_OG_LEVERING">
-          <DataField>15.4MONTERING OG LEVERING</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="ActiveSalesTerms">
+          <DataField>ActiveSalesTerms</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
     </DataSet>
@@ -170,7 +170,8 @@ FROM
                   <TextRun>
                     <Value>1. Anvendelse</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -185,7 +186,20 @@ FROM
                     <Label>ANVENDELSE</Label>
                     <Value>=First(Fields!ID1__ANVENDELSE.Value, "DataSet1")</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -196,7 +210,8 @@ FROM
                   <TextRun>
                     <Value>2. Betalingvilkår</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -211,6 +226,19 @@ FROM
                     <Label>BETALINGSVILKÅR</Label>
                     <Value>=First(Fields!ID2__BETALINGSVILKÅR.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -222,7 +250,8 @@ FROM
                   <TextRun>
                     <Value>3. Salgspant / eiendomsforhold</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -237,6 +266,19 @@ FROM
                     <Label>SALGSPANT___EIENDOMSFORHOLD</Label>
                     <Value>=First(Fields!ID3__SALGSPANT___EIENDOMSFORHOLD.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -248,7 +290,8 @@ FROM
                   <TextRun>
                     <Value>4. Leveringstid</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -263,6 +306,19 @@ FROM
                     <Label>LEVERINGSTID</Label>
                     <Value>=First(Fields!ID4__LEVERINGSTID.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -274,7 +330,8 @@ FROM
                   <TextRun>
                     <Value>5. FORSINKET LEVERING – FRITAKELSE</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -289,6 +346,19 @@ FROM
                     <Label>FORSINKET_LEVERING___FRITAKELSE</Label>
                     <Value>=First(Fields!ID5__FORSINKET_LEVERING___FRITAKELSE.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -300,7 +370,8 @@ FROM
                   <TextRun>
                     <Value>6. AVBESTILLING</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -315,6 +386,19 @@ FROM
                     <Label>AVBESTILLING</Label>
                     <Value>=First(Fields!ID6__AVBESTILLING.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -326,7 +410,8 @@ FROM
                   <TextRun>
                     <Value>7. ANGRERETT</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -341,6 +426,19 @@ FROM
                     <Label>ANGRERETT</Label>
                     <Value>=First(Fields!ID7__ANGRERETT.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -352,7 +450,8 @@ FROM
                   <TextRun>
                     <Value>8. ANSVARSFORHOLD</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -367,6 +466,19 @@ FROM
                     <Label>ANSVARSFORHOLD</Label>
                     <Value>=First(Fields!ID8__ANSVARSFORHOLD.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -378,7 +490,8 @@ FROM
                   <TextRun>
                     <Value>9. TVISTER</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -393,6 +506,19 @@ FROM
                     <Label>TVISTER</Label>
                     <Value>=First(Fields!ID9__TVISTER.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -404,7 +530,8 @@ FROM
                   <TextRun>
                     <Value>10. FREMFØRING OG TILKOBLING AV STRØM</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -419,6 +546,19 @@ FROM
                     <Label>FREMFØRING_OG_TILKOBLING_AV_STRØM</Label>
                     <Value>=First(Fields!ID10__FREMFØRING_OG_TILKOBLING_AV_STRØM.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -430,7 +570,8 @@ FROM
                   <TextRun>
                     <Value>11. REKLAMASJON OG MANGLER</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -445,7 +586,8 @@ FROM
                     <Label>REKLAMASJON_OG_MANGLER</Label>
                     <Value>=First(Fields!ID11__REKLAMASJON_OG_MANGLER.Value, "DataSet1")</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -453,10 +595,10 @@ FROM
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0cm</Top>
-            <Left>0cm</Left>
-            <Height>16.08417cm</Height>
-            <Width>9.9307cm</Width>
+            <Top>0.29104cm</Top>
+            <Left>0.21167cm</Left>
+            <Height>11.85084cm</Height>
+            <Width>9.71904cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -476,7 +618,8 @@ FROM
                   <TextRun>
                     <Value>12. REFERANSEBILDE</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -491,6 +634,19 @@ FROM
                     <Label>REFERANSEBILDE</Label>
                     <Value>=First(Fields!ID12__REFERANSEBILDE.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -502,7 +658,8 @@ FROM
                   <TextRun>
                     <Value>13. GDPR - PERSONVERN</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -517,6 +674,19 @@ FROM
                     <Label>GDPR___PERSONVERN</Label>
                     <Value>=First(Fields!ID13__GDPR___PERSONVERN.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -528,7 +698,8 @@ FROM
                   <TextRun>
                     <Value>14. NYHETSBREV</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -543,7 +714,8 @@ FROM
                     <Label>NYHETSBREV</Label>
                     <Value>=First(Fields!ID14__NYHETSBREV.Value, "DataSet1")</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -552,37 +724,47 @@ FROM
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>15. VIKTIG INFORMASJON OM SELGERS PRODUKTER OG MONTERINGEN</Value>
+                    <Value />
                     <Style>
-                      <FontSize>8pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
+                <Style />
               </Paragraph>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>15.1 BRUK AV PRODUKTER</Value>
+                    <Value>15. BRUK AV PRODUKTER</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
                 </TextRuns>
-                <Style>
-                  <TextAlign>Left</TextAlign>
-                </Style>
+                <Style />
               </Paragraph>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
                     <Label>BRUK_AV_PRODUKTER</Label>
-                    <Value>=First(Fields!ID15_1_BRUK_AV_PRODUKTER.Value, "DataSet1")</Value>
+                    <Value>=First(Fields!ID15__BRUK_AV_PRODUKTER.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -592,9 +774,10 @@ FROM
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>15.2 DUKER TIL SCREEN OG MARKISER</Value>
+                    <Value>16. DUKER TIL SCREEN OG MARKISER</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -607,8 +790,21 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Label>DUKER_TIL_SCREEN_OG_MARKISER</Label>
-                    <Value>=First(Fields!ID15_2_DUKER_TIL_SCREEN_OG_MARKISER.Value, "DataSet1")</Value>
+                    <Value>=First(Fields!ID16__DUKER_TIL_SCREEN_OG_MARKISER.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -618,9 +814,10 @@ FROM
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>15.3 SOLSKJERMING OG GLASSKADER</Value>
+                    <Value>17. SOLSKJERMING OG GLASSKADER</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -633,8 +830,21 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Label>SOLSKJERMING_OG_GLASSKADER</Label>
-                    <Value>=First(Fields!ID15_3_SOLSKJERMING_OG_GLASSKADER.Value, "DataSet1")</Value>
+                    <Value>=First(Fields!ID17__SOLSKJERMING_OG_GLASSKADER.Value, "DataSet1")</Value>
                     <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
                       <FontSize>8pt</FontSize>
                     </Style>
                   </TextRun>
@@ -644,9 +854,10 @@ FROM
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>15.4MONTERING OG LEVERING</Value>
+                    <Value>18. MONTERING OG LEVERING</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                       <FontWeight>Bold</FontWeight>
                     </Style>
                   </TextRun>
@@ -659,9 +870,10 @@ FROM
                 <TextRuns>
                   <TextRun>
                     <Label>MONTERING_OG_LEVERING</Label>
-                    <Value>=First(Fields!ID15_4MONTERING_OG_LEVERING.Value, "DataSet1")</Value>
+                    <Value>=First(Fields!ID18__MONTERING_OG_LEVERING.Value, "DataSet1")</Value>
                     <Style>
-                      <FontSize>8pt</FontSize>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>7.5pt</FontSize>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -669,10 +881,10 @@ FROM
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>0cm</Top>
-            <Left>10.00126cm</Left>
-            <Height>16.08417cm</Height>
-            <Width>10.03188cm</Width>
+            <Top>0.29104cm</Top>
+            <Left>10.10709cm</Left>
+            <Height>11.85084cm</Height>
+            <Width>9.71438cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>

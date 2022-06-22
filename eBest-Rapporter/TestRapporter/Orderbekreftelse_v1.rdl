@@ -1065,8 +1065,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
                 <Value>=Fields!ParentArticleId.Value</Value>
               </SortExpression>
             </SortExpressions>
-            <Top>8.19891cm</Top>
-            <Left>0.7112cm</Left>
+            <Top>11.01825cm</Top>
+            <Left>0.60747cm</Left>
             <Height>2.45526cm</Height>
             <Width>19.28299cm</Width>
             <Style>
@@ -1093,8 +1093,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>1.04069cm</Top>
-            <Left>0.68806cm</Left>
+            <Top>3.86003cm</Top>
+            <Left>0.58433cm</Left>
             <Height>0.5cm</Height>
             <Width>4.97417cm</Width>
             <ZIndex>1</ZIndex>
@@ -1126,8 +1126,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>CustomerName</rd:DefaultName>
-            <Top>1.54069cm</Top>
-            <Left>0.68806cm</Left>
+            <Top>4.36003cm</Top>
+            <Left>0.58433cm</Left>
             <Height>0.5cm</Height>
             <Width>7.85813cm</Width>
             <ZIndex>2</ZIndex>
@@ -1171,8 +1171,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>InvoiceAdrName</rd:DefaultName>
-            <Top>3.11125cm</Top>
-            <Left>0.68806cm</Left>
+            <Top>5.93059cm</Top>
+            <Left>0.58433cm</Left>
             <Height>1cm</Height>
             <Width>7.85813cm</Width>
             <ZIndex>3</ZIndex>
@@ -1217,8 +1217,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>InvoiceAdr1</rd:DefaultName>
-            <Top>2.04069cm</Top>
-            <Left>0.66492cm</Left>
+            <Top>4.86003cm</Top>
+            <Left>0.56119cm</Left>
             <Height>0.5cm</Height>
             <Width>7.88127cm</Width>
             <ZIndex>4</ZIndex>
@@ -1263,8 +1263,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox22</rd:DefaultName>
-            <Top>2.61125cm</Top>
-            <Left>0.66492cm</Left>
+            <Top>5.43059cm</Top>
+            <Left>0.56119cm</Left>
             <Height>0.5cm</Height>
             <Width>7.88127cm</Width>
             <ZIndex>5</ZIndex>
@@ -1306,8 +1306,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox35</rd:DefaultName>
-            <Top>0.17639cm</Top>
-            <Left>0.68806cm</Left>
+            <Top>2.99573cm</Top>
+            <Left>0.58433cm</Left>
             <Height>0.68792cm</Height>
             <Width>11.7475cm</Width>
             <ZIndex>6</ZIndex>
@@ -1339,8 +1339,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>1.04069cm</Top>
-            <Left>9.07535cm</Left>
+            <Top>3.86003cm</Top>
+            <Left>8.97162cm</Left>
             <Height>0.5cm</Height>
             <Width>3.61125cm</Width>
             <ZIndex>7</ZIndex>
@@ -1372,8 +1372,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>1.54069cm</Top>
-            <Left>9.07535cm</Left>
+            <Top>4.36003cm</Top>
+            <Left>8.97162cm</Left>
             <Height>0.5cm</Height>
             <Width>3.61125cm</Width>
             <ZIndex>8</ZIndex>
@@ -1405,8 +1405,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>2.04069cm</Top>
-            <Left>9.07535cm</Left>
+            <Top>4.86003cm</Top>
+            <Left>8.97162cm</Left>
             <Height>0.5cm</Height>
             <Width>3.61125cm</Width>
             <ZIndex>9</ZIndex>
@@ -1438,8 +1438,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>2.54069cm</Top>
-            <Left>9.07535cm</Left>
+            <Top>5.36003cm</Top>
+            <Left>8.97162cm</Left>
             <Height>0.5cm</Height>
             <Width>3.61125cm</Width>
             <ZIndex>10</ZIndex>
@@ -1471,8 +1471,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>3.04069cm</Top>
-            <Left>9.07535cm</Left>
+            <Top>5.86003cm</Top>
+            <Left>8.97162cm</Left>
             <Height>0.5cm</Height>
             <Width>3.61125cm</Width>
             <ZIndex>11</ZIndex>
@@ -1504,8 +1504,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>3.54069cm</Top>
-            <Left>9.07535cm</Left>
+            <Top>6.36003cm</Top>
+            <Left>8.97162cm</Left>
             <Height>0.5cm</Height>
             <Width>3.61125cm</Width>
             <ZIndex>12</ZIndex>
@@ -1540,8 +1540,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>1.04069cm</Top>
-            <Left>12.9908cm</Left>
+            <Top>3.86003cm</Top>
+            <Left>12.88707cm</Left>
             <Height>0.5cm</Height>
             <Width>7.00339cm</Width>
             <ZIndex>13</ZIndex>
@@ -1605,8 +1605,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>1.54069cm</Top>
-            <Left>12.9908cm</Left>
+            <Top>4.36003cm</Top>
+            <Left>12.88707cm</Left>
             <Height>0.5cm</Height>
             <Width>7.00339cm</Width>
             <ZIndex>14</ZIndex>
@@ -1637,8 +1637,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>2.04069cm</Top>
-            <Left>12.99079cm</Left>
+            <Top>4.86003cm</Top>
+            <Left>12.88706cm</Left>
             <Height>0.5cm</Height>
             <Width>7.00339cm</Width>
             <ZIndex>15</ZIndex>
@@ -1669,8 +1669,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>2.54069cm</Top>
-            <Left>12.99079cm</Left>
+            <Top>5.36003cm</Top>
+            <Left>12.88706cm</Left>
             <Height>0.5cm</Height>
             <Width>7.00339cm</Width>
             <ZIndex>16</ZIndex>
@@ -1701,8 +1701,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>3.04069cm</Top>
-            <Left>12.99079cm</Left>
+            <Top>5.86003cm</Top>
+            <Left>12.88706cm</Left>
             <Height>0.5cm</Height>
             <Width>7.00339cm</Width>
             <ZIndex>17</ZIndex>
@@ -1744,8 +1744,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox36</rd:DefaultName>
-            <Top>3.54069cm</Top>
-            <Left>12.99079cm</Left>
+            <Top>6.36003cm</Top>
+            <Left>12.88706cm</Left>
             <Height>1cm</Height>
             <Width>7.00339cm</Width>
             <ZIndex>18</ZIndex>
@@ -1777,8 +1777,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox16</rd:DefaultName>
-            <Top>4.82477cm</Top>
-            <Left>0.68806cm</Left>
+            <Top>7.64411cm</Top>
+            <Left>0.58433cm</Left>
             <Height>0.5cm</Height>
             <Width>3.70417cm</Width>
             <ZIndex>19</ZIndex>
@@ -1843,8 +1843,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox22</rd:DefaultName>
-            <Top>4.82477cm</Top>
-            <Left>5.4241cm</Left>
+            <Top>7.64411cm</Top>
+            <Left>5.32037cm</Left>
             <Height>1.5cm</Height>
             <Width>10.04061cm</Width>
             <ZIndex>20</ZIndex>
@@ -1909,8 +1909,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox22</rd:DefaultName>
-            <Top>6.46589cm</Top>
-            <Left>0.7112cm</Left>
+            <Top>9.28523cm</Top>
+            <Left>0.60747cm</Left>
             <Height>1.5cm</Height>
             <Width>19.283cm</Width>
             <ZIndex>21</ZIndex>
@@ -2358,8 +2358,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>11.06014cm</Top>
-            <Left>0.66492cm</Left>
+            <Top>13.87948cm</Top>
+            <Left>0.56119cm</Left>
             <Height>11.85084cm</Height>
             <Width>10.67021cm</Width>
             <ZIndex>22</ZIndex>
@@ -2645,8 +2645,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox5</rd:DefaultName>
-            <Top>11.06014cm</Top>
-            <Left>11.62036cm</Left>
+            <Top>13.87948cm</Top>
+            <Left>11.51663cm</Left>
             <Height>11.85084cm</Height>
             <Width>8.62959cm</Width>
             <ZIndex>23</ZIndex>
@@ -2660,8 +2660,307 @@ WHERE ActiveSalesTerms = 1</CommandText>
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Image Name="Image2">
+            <Source>Embedded</Source>
+            <Value>Et_soleklart_valg</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.36098cm</Top>
+            <Left>0.60745cm</Left>
+            <Height>2.03813cm</Height>
+            <Width>6.76521cm</Width>
+            <ZIndex>24</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox13">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Scandic Markiser AS</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>0.36098cm</Top>
+            <Left>9.46767cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.69604cm</Width>
+            <ZIndex>25</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox14">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Damvegen 11</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>0.86098cm</Top>
+            <Left>9.46768cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.69604cm</Width>
+            <ZIndex>26</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox15">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>2827 Hunndalen</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>1.36099cm</Top>
+            <Left>9.46767cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.69604cm</Width>
+            <ZIndex>27</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox17">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Orgnr: 974 468 670 MVA</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>1.86099cm</Top>
+            <Left>9.46767cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.69604cm</Width>
+            <ZIndex>28</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox18">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Tlf: 900 90 100</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>0.36097cm</Top>
+            <Left>15.0588cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.85478cm</Width>
+            <ZIndex>29</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox19">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>E-post: post@scandic.no</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>0.86097cm</Top>
+            <Left>15.05881cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.85478cm</Width>
+            <ZIndex>30</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox20">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>www.scandic.no</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>1.36099cm</Top>
+            <Left>15.05881cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.85478cm</Width>
+            <ZIndex>31</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox21">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>K</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>onto: 1822.62.52882</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox13</rd:DefaultName>
+            <Top>1.86099cm</Top>
+            <Left>15.05881cm</Left>
+            <Height>0.5cm</Height>
+            <Width>4.85478cm</Width>
+            <ZIndex>32</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Line Name="Line1">
+            <Top>2.51005cm</Top>
+            <Left>0.58431cm</Left>
+            <Height>0cm</Height>
+            <Width>19.30614cm</Width>
+            <ZIndex>33</ZIndex>
+            <Style>
+              <Border>
+                <Color>#fff301</Color>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
         </ReportItems>
-        <Height>23.55183cm</Height>
+        <Height>27.37144cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -2670,316 +2969,6 @@ WHERE ActiveSalesTerms = 1</CommandText>
       </Body>
       <Width>20.54417cm</Width>
       <Page>
-        <PageHeader>
-          <Height>2.56646cm</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Image Name="Image2">
-              <Source>Embedded</Source>
-              <Value>Et_soleklart_valg</Value>
-              <Sizing>FitProportional</Sizing>
-              <Top>0.25093cm</Top>
-              <Left>0.68806cm</Left>
-              <Height>2.03813cm</Height>
-              <Width>6.76521cm</Width>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-            </Image>
-            <Textbox Name="Textbox13">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Scandic Markiser AS</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>0.25093cm</Top>
-              <Left>9.54828cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.69604cm</Width>
-              <ZIndex>1</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox14">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Damvegen 11</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>0.75093cm</Top>
-              <Left>9.54829cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.69604cm</Width>
-              <ZIndex>2</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox15">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>2827 Hunndalen</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>1.25094cm</Top>
-              <Left>9.54828cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.69604cm</Width>
-              <ZIndex>3</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox17">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Orgnr: 974 468 670 MVA</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>1.75094cm</Top>
-              <Left>9.54828cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.69604cm</Width>
-              <ZIndex>4</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox18">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Tlf: 900 90 100</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>0.25092cm</Top>
-              <Left>15.13941cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.85478cm</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox19">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>E-post: post@scandic.no</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>0.75092cm</Top>
-              <Left>15.13942cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.85478cm</Width>
-              <ZIndex>6</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox20">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>www.scandic.no</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>1.25094cm</Top>
-              <Left>15.13942cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.85478cm</Width>
-              <ZIndex>7</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox21">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>K</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>8pt</FontSize>
-                      </Style>
-                    </TextRun>
-                    <TextRun>
-                      <Value>onto: 1822.62.52882</Value>
-                      <Style>
-                        <FontFamily>Calibri</FontFamily>
-                        <FontSize>9pt</FontSize>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox13</rd:DefaultName>
-              <Top>1.75094cm</Top>
-              <Left>15.13942cm</Left>
-              <Height>0.5cm</Height>
-              <Width>4.85478cm</Width>
-              <ZIndex>8</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Line Name="Line1">
-              <Top>2.4cm</Top>
-              <Left>0.66492cm</Left>
-              <Height>0cm</Height>
-              <Width>19.30614cm</Width>
-              <ZIndex>9</ZIndex>
-              <Style>
-                <Border>
-                  <Color>#fff301</Color>
-                  <Style>Solid</Style>
-                </Border>
-              </Style>
-            </Line>
-          </ReportItems>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageHeader>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
         <LeftMargin>0cm</LeftMargin>
@@ -3000,8 +2989,8 @@ WHERE ActiveSalesTerms = 1</CommandText>
   </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
-      <NumberOfColumns>2</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
       <CellDefinitions>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

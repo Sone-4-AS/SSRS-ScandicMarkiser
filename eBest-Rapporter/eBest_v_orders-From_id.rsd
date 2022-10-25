@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>eBestTest</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@OrderId">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Int32</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT * FROM dbo.v_orders WHERE Id=@OrderId</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Id">
+        <DataField>Id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderNo">
+        <DataField>OrderNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SumProductCostPrice">
+        <DataField>SumProductCostPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumProductPrice">
+        <DataField>SumProductPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumProductListPrice">
+        <DataField>SumProductListPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumInternalPrice">
+        <DataField>SumInternalPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumLift">
+        <DataField>SumLift</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumFees">
+        <DataField>SumFees</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumPrepay">
+        <DataField>SumPrepay</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumShipping">
+        <DataField>SumShipping</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumService">
+        <DataField>SumService</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumTotal">
+        <DataField>SumTotal</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumVAT">
+        <DataField>SumVAT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumAssemblyPrice">
+        <DataField>SumAssemblyPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="OrderConfirmationFileName">
+        <DataField>OrderConfirmationFileName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="OrderConfirmationSentTo">
+        <DataField>OrderConfirmationSentTo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="OrderConfirmationSendtDate">
+        <DataField>OrderConfirmationSendtDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ImageCount">
+        <DataField>ImageCount</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderConfirmationDontSend">
+        <DataField>OrderConfirmationDontSend</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="OrderDate">
+        <DataField>OrderDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceNo">
+        <DataField>InvoiceNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceDate">
+        <DataField>InvoiceDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SoldByUserId">
+        <DataField>SoldByUserId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SellerNo">
+        <DataField>SellerNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SoldByName">
+        <DataField>SoldByName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SumProvisjon">
+        <DataField>SumProvisjon</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumBruttoProvisjon">
+        <DataField>SumBruttoProvisjon</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Rabatt">
+        <DataField>Rabatt</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyUserId">
+        <DataField>AssemblyUserId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyUserName">
+        <DataField>AssemblyUserName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyUserSellerNo">
+        <DataField>AssemblyUserSellerNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyUserDepartment">
+        <DataField>AssemblyUserDepartment</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SalesDepartment">
+        <DataField>SalesDepartment</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SalesSubDepartment">
+        <DataField>SalesSubDepartment</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="eBestNo">
+        <DataField>eBestNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DeliverdDate">
+        <DataField>DeliverdDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ExcludedFromProvision">
+        <DataField>ExcludedFromProvision</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="SumInternalPriceInclDiscount">
+        <DataField>SumInternalPriceInclDiscount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="Reviewed">
+        <DataField>Reviewed</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="OrderConfirmationSendt">
+        <DataField>OrderConfirmationSendt</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="Invoiced">
+        <DataField>Invoiced</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="InternalDiscount">
+        <DataField>InternalDiscount</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CustomerAddressId">
+        <DataField>CustomerAddressId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="IsPersonal">
+        <DataField>IsPersonal</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ContactPerson">
+        <DataField>ContactPerson</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Phone">
+        <DataField>Phone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CustomerName">
+        <DataField>CustomerName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CustomerNo">
+        <DataField>CustomerNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="EMail">
+        <DataField>EMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceAdrName">
+        <DataField>InvoiceAdrName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceAdr1">
+        <DataField>InvoiceAdr1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceAdr2">
+        <DataField>InvoiceAdr2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceAdrPostalCode">
+        <DataField>InvoiceAdrPostalCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceAdrCity">
+        <DataField>InvoiceAdrCity</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InvoiceAdrCountry">
+        <DataField>InvoiceAdrCountry</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrName">
+        <DataField>AssemblyAdrName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdr1">
+        <DataField>AssemblyAdr1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdr2">
+        <DataField>AssemblyAdr2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrPostalCode">
+        <DataField>AssemblyAdrPostalCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrCity">
+        <DataField>AssemblyAdrCity</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrCountry">
+        <DataField>AssemblyAdrCountry</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="OrderWeek">
+        <DataField>OrderWeek</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderYear">
+        <DataField>OrderYear</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderState">
+        <DataField>OrderState</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AssemblerDepartment">
+        <DataField>AssemblerDepartment</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrDescription">
+        <DataField>AssemblyAdrDescription</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CustomerId">
+        <DataField>CustomerId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderEMail">
+        <DataField>OrderEMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ExtraProductsSCId">
+        <DataField>ExtraProductsSCId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SelfAssembly">
+        <DataField>SelfAssembly</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyLocationId">
+        <DataField>AssemblyLocationId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="HasMeasuredArticles">
+        <DataField>HasMeasuredArticles</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ColliCount">
+        <DataField>ColliCount</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="EasyStatus">
+        <DataField>EasyStatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="CurrentLocationId">
+        <DataField>CurrentLocationId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="CurrentLocationNo">
+        <DataField>CurrentLocationNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="CurrentLocationName">
+        <DataField>CurrentLocationName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DeliveryDate">
+        <DataField>DeliveryDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DepartmentId">
+        <DataField>DepartmentId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DepartmentNo">
+        <DataField>DepartmentNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DepartmentName">
+        <DataField>DepartmentName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyLocationName">
+        <DataField>AssemblyLocationName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyLocationNo">
+        <DataField>AssemblyLocationNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ExecStatusPick">
+        <DataField>ExecStatusPick</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ExecStatusPurchase">
+        <DataField>ExecStatusPurchase</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ExecStatusProduce">
+        <DataField>ExecStatusProduce</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyLocationShortName">
+        <DataField>AssemblyLocationShortName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ChildOrderCount">
+        <DataField>ChildOrderCount</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="MotherOrderId">
+        <DataField>MotherOrderId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="MotherOrderNo">
+        <DataField>MotherOrderNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="MotherOrderDate">
+        <DataField>MotherOrderDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="MotherSoldByUserId">
+        <DataField>MotherSoldByUserId</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SellerRole">
+        <DataField>SellerRole</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProdStatus">
+        <DataField>ProdStatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ProdReleaseStatus">
+        <DataField>ProdReleaseStatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyConfirmationStatus">
+        <DataField>AssemblyConfirmationStatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyConfirmationChanged">
+        <DataField>AssemblyConfirmationChanged</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="AssemblerPhone">
+        <DataField>AssemblerPhone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="eBestOrderType">
+        <DataField>eBestOrderType</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SyncStatus">
+        <DataField>SyncStatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DraftValidTo">
+        <DataField>DraftValidTo</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DraftAccepted">
+        <DataField>DraftAccepted</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DraftPDF">
+        <DataField>DraftPDF</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DraftSendt">
+        <DataField>DraftSendt</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SellerPhone">
+        <DataField>SellerPhone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SellerMail">
+        <DataField>SellerMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DraftSum">
+        <DataField>DraftSum</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="IncMVA">
+        <DataField>IncMVA</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ShowSalesPrice">
+        <DataField>ShowSalesPrice</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ShowDetails">
+        <DataField>ShowDetails</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

@@ -54,17 +54,23 @@
     <DataSet Include="eBest-SMSLog.rsd" />
     <DataSet Include="eBest-v_orders.rsd" />
     <DataSet Include="eBest-v_order_lines.rsd" />
+    <DataSet Include="eBest-v_order_line_-From_id.rsd" />
+    <DataSet Include="eBest_v_orders-From_id.rsd" />
   </ItemGroup>
   <ItemGroup>
     <DataSource Include="eBest.rds" />
+    <DataSource Include="eBestTest.rds" />
     <DataSource Include="InfoEasy.rds" />
   </ItemGroup>
   <ItemGroup>
     <Report Include="Leveringstider.rdl" />
     <Report Include="Monteringsrapport.rdl" />
+    <Report Include="OrderbekreftelseOLD.rdl" />
+    <Report Include="OrderConfirmLines.rdl" />
+    <Report Include="OrderLines.rdl" />
     <Report Include="Ordre-eBest-InfoEasy.rdl" />
+    <Report Include="Ordrebekreftelse.rdl" />
     <Report Include="SMSLog.rdl" />
-    <Report Include="TilbudsOrdre.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>

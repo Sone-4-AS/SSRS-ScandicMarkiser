@@ -11,7 +11,7 @@
           <rd:DbType>Int32</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT * FROM dbo.v_order_lines WHERE OrderId = (@OrderId) ORDER BY EasySchemaId, Text</CommandText>
+      <CommandText>SELECT *,DENSE_RANK() OVER(ORDER BY CASE WHEN EasySchemaId = 0 THEN [AId] ELSE EasySchemaId END DESC) AS R FROM dbo.v_order_lines WHERE OrderId = (@OrderId) ORDER BY R,Text</CommandText>
     </Query>
     <Fields>
       <Field Name="Id">
@@ -157,6 +157,10 @@
       <Field Name="HTMLDescription">
         <DataField>HTMLDescription</DataField>
         <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="R">
+        <DataField>R</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

@@ -8,3 +8,5 @@ eBest-Rapporter/bin/Debug/
 .vs/
 
 UpgradeLog.htm
+
+*.data

@@ -51,7 +51,10 @@
   <ItemGroup>
     <DataSet Include="Easy-Ordre-LeveringDato.rsd" />
     <DataSet Include="Easy-VOrdreDetalj.rsd" />
+    <DataSet Include="eBest-OpenOrders.rsd" />
+    <DataSet Include="eBest-OpenOrders_Sellers.rsd" />
     <DataSet Include="eBest-SMSLog.rsd" />
+    <DataSet Include="eBest-t_locations.rsd" />
     <DataSet Include="eBest-v_orders.rsd" />
     <DataSet Include="eBest-v_order_lines.rsd" />
     <DataSet Include="eBest-v_order_line_-From_id.rsd" />
@@ -65,6 +68,7 @@
   <ItemGroup>
     <Report Include="Leveringstider.rdl" />
     <Report Include="Monteringsrapport.rdl" />
+    <Report Include="OpenOrders.rdl" />
     <Report Include="OrderbekreftelseOLD.rdl" />
     <Report Include="OrderConfirmLines.rdl" />
     <Report Include="OrderLines.rdl" />

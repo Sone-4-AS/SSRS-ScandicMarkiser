@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>eBest</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@Sellers">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>true</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Int32</rd:DbType>
+          <rd:IsMultiValued>true</rd:IsMultiValued>
+        </DataSetParameter>
+        <DataSetParameter Name="@Location">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>Object</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT OrderNo, eBestNo, IsNull(OrderDate,0) As OrderDate, CustomerName, AssemblyAdr1, AssemblyAdrCity, AssemblyAdrPostalCode, IsNull(SumProvisjon,0) As SumProvisjon, IsNull(SumInternalPrice,0) AS StockValue,IsNull(SumProductPrice,0) + IsNull(SumAssemblyPrice,0) + IsNull(SumLift,0) + IsNull(SumFees,0) As NettoSum, 
+ IsNull(SumAssemblyPrice,0) As SumAssembly, CurrentLocationNo, DeliveryDate, ColliCount, SoldByName, DeliverdDate FROM v_orders WHERE InvoiceNo IS NULL AND (IsNull(SumProductPrice,0) + IsNull(SumAssemblyPrice,0) + IsNull(SumLift,0) + IsNull(SumFees,0)) &lt;&gt; 0 AND OrderDate &gt; '2017.01.01' AND SellerNo IN (@Sellers) AND CurrentLocationNo IN (@Location)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="OrderNo">
+        <DataField>OrderNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="eBestNo">
+        <DataField>eBestNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="OrderDate">
+        <DataField>OrderDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="CustomerName">
+        <DataField>CustomerName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdr1">
+        <DataField>AssemblyAdr1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrCity">
+        <DataField>AssemblyAdrCity</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="AssemblyAdrPostalCode">
+        <DataField>AssemblyAdrPostalCode</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SumProvisjon">
+        <DataField>SumProvisjon</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="StockValue">
+        <DataField>StockValue</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="NettoSum">
+        <DataField>NettoSum</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumAssembly">
+        <DataField>SumAssembly</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="CurrentLocationNo">
+        <DataField>CurrentLocationNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DeliveryDate">
+        <DataField>DeliveryDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ColliCount">
+        <DataField>ColliCount</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SoldByName">
+        <DataField>SoldByName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DeliverdDate">
+        <DataField>DeliverdDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

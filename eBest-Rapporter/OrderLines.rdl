@@ -9,7 +9,7 @@
       <am:Name>SSDTRS</am:Name>
       <am:Version>17.8.34322.80</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2023-12-12T10:35:27.9638369Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2023-12-16T13:53:44.0290632Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -468,7 +468,7 @@
     </DataSet>
     <DataSet Name="v_order_lines">
       <SharedDataSet>
-        <SharedDataSetReference>eBest-v_order_line_-From_id</SharedDataSetReference>
+        <SharedDataSetReference>eBest-v_order_line-from_id</SharedDataSetReference>
         <QueryParameters>
           <QueryParameter Name="@OrderId">
             <Value>=Parameters!OrderId.Value</Value>
@@ -1183,8 +1183,16 @@
               <TablixMembers>
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
-                <TablixMember />
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=(First(Fields!ShowSalesPrice.Value, "v_orders") = 0)</Hidden>
+                  </Visibility>
+                </TablixMember>
+                <TablixMember>
+                  <Visibility>
+                    <Hidden>=(First(Fields!ShowSalesPrice.Value, "v_orders") = 0)</Hidden>
+                  </Visibility>
+                </TablixMember>
                 <TablixMember />
                 <TablixMember />
               </TablixMembers>
@@ -1200,7 +1208,7 @@
                     <TablixMember />
                     <TablixMember>
                       <Visibility>
-                        <Hidden>=IIF(Fields!EasySchemaId.Value &gt; 0,Fields!HTMLText.Value, Fields!DraftText.Value)=""</Hidden>
+                        <Hidden>=(Fields!EasySchemaId.Value &gt; 0 AND Fields!HTMLText.Value = "") OR (Fields!EasySchemaId.Value =0 AND Fields!DraftText.Value="")</Hidden>
                       </Visibility>
                     </TablixMember>
                   </TablixMembers>
@@ -1226,82 +1234,12 @@
               </Border>
             </Style>
           </Tablix>
-          <Textbox Name="Textbox40">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Sum(Fields!DraftSum.Value, "v_orders")</Value>
-                    <Style>
-                      <FontSize>12pt</FontSize>
-                      <FontWeight>Bold</FontWeight>
-                      <Format>#,0.00</Format>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Right</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>3.00426cm</Top>
-            <Left>18.06208cm</Left>
-            <Height>0.73547cm</Height>
-            <Width>2.5cm</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox41">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Sum(Fields!DraftSum.Value, "v_orders")/1.25</Value>
-                    <Style>
-                      <Format>#,0.00</Format>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Right</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>3.82086cm</Top>
-            <Left>18.06208cm</Left>
-            <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Line Name="Line1">
             <Top>2.82787cm</Top>
             <Left>14.78703cm</Left>
             <Height>0cm</Height>
             <Width>5.77505cm</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>Solid</Style>
@@ -1332,7 +1270,7 @@
             <Left>15.38569cm</Left>
             <Height>0.73547cm</Height>
             <Width>2.5cm</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1366,7 +1304,7 @@
             <Left>15.38922cm</Left>
             <Height>0.6cm</Height>
             <Width>2.5cm</Width>
-            <ZIndex>5</ZIndex>
+            <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1377,8 +1315,80 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="DraftSum">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Sum(Fields!DraftSum.Value, "v_orders")</Value>
+                    <Style>
+                      <FontSize>12pt</FontSize>
+                      <FontWeight>Bold</FontWeight>
+                      <Format>'kr' 0.00</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>DraftSum</rd:DefaultName>
+            <Top>3.00426cm</Top>
+            <Left>18.06208cm</Left>
+            <Height>0.73547cm</Height>
+            <Width>2.5cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
+            </Style>
+          </Textbox>
+          <Textbox Name="DraftSum1">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Sum(Fields!DraftSum.Value, "v_orders")-(Sum(Fields!DraftSum.Value, "v_orders")/1.25)</Value>
+                    <Style>
+                      <Format>'kr' 0.00</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>DraftSum1</rd:DefaultName>
+            <Top>3.81734cm</Top>
+            <Left>18.06208cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.5cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>5.03646cm</Height>
+        <Height>9.2698cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1403,10 +1413,10 @@
       <DataType>String</DataType>
       <DefaultValue>
         <Values>
-          <Value>184894</Value>
+          <Value>216847</Value>
         </Values>
       </DefaultValue>
-      <Prompt>Order Id</Prompt>
+      <Prompt>OrderId</Prompt>
     </ReportParameter>
   </ReportParameters>
   <ReportParametersLayout>

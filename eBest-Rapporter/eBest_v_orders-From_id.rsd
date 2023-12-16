@@ -2,13 +2,13 @@
 <SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <DataSet Name="DataSet1">
     <Query>
-      <DataSourceReference>eBestTest</DataSourceReference>
+      <DataSourceReference>eBest</DataSourceReference>
       <DataSetParameters>
         <DataSetParameter Name="@OrderId">
           <ReadOnly>false</ReadOnly>
           <Nullable>false</Nullable>
           <OmitFromQuery>false</OmitFromQuery>
-          <rd:DbType>Int32</rd:DbType>
+          <rd:DbType>Object</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
       <CommandText>SELECT * FROM dbo.v_orders WHERE Id=@OrderId</CommandText>

@@ -406,6 +406,54 @@
         <DataField>AssemblerPhone</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
+      <Field Name="eBestOrderType">
+        <DataField>eBestOrderType</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SyncStatus">
+        <DataField>SyncStatus</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="DraftValidTo">
+        <DataField>DraftValidTo</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DraftAccepted">
+        <DataField>DraftAccepted</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="DraftPDF">
+        <DataField>DraftPDF</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DraftSendt">
+        <DataField>DraftSendt</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SellerPhone">
+        <DataField>SellerPhone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SellerMail">
+        <DataField>SellerMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DraftSum">
+        <DataField>DraftSum</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="IncMVA">
+        <DataField>IncMVA</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ShowSalesPrice">
+        <DataField>ShowSalesPrice</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ShowDetails">
+        <DataField>ShowDetails</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
     </Fields>
   </DataSet>
 </SharedDataSet>

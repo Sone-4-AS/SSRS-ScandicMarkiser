@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>eBest</DataSourceReference>
+      <DataSetParameters>
+        <DataSetParameter Name="@eBestNo">
+          <ReadOnly>false</ReadOnly>
+          <Nullable>false</Nullable>
+          <OmitFromQuery>false</OmitFromQuery>
+          <rd:DbType>String</rd:DbType>
+        </DataSetParameter>
+      </DataSetParameters>
+      <CommandText>SELECT
+        VO.Id,
+        VO.OrderNo,
+        VO.SumLift,
+        VO.SumProductListPrice,
+        VO.SumProductPrice,
+        VO.SumProductCostPrice,
+        VO.SumInternalPrice,
+        VO.SumFees,
+        VO.SumPrepay,
+        VO.SumShipping,
+        VO.SumService,
+        VO.SumTotal,
+        VO.SumVAT,
+        VO.SumAssemblyPrice,
+        VO.eBestNo,
+        TDOT.Adresse2,
+        TDOT.Adresse1,
+        TDOT.ContactPerson,
+        TDOT.Phone,
+        TDOT.CustomerName,
+        TDOT.CustomerMail,
+        VO.SoldByName,
+        TDOT.[Postnr.],
+        TDOT.PostSted,
+        VO.DraftValidTo,
+        VU.Phone AS SellerPhone,
+        VU.EMail AS SellerMail
+FROM
+        v_orders AS [VO]
+    JOIN
+      t_draft_order_tempdata AS TDOT
+        ON [VO].Id = TDOT.OrderId
+    JOIN v_users AS VU
+        ON VO.SoldByUserId = VU.Id
+WHERE
+        [VO].eBestNo = (@eBestNo)</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="Id">
+        <DataField>Id</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderNo">
+        <DataField>OrderNo</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SumLift">
+        <DataField>SumLift</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumProductListPrice">
+        <DataField>SumProductListPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumProductPrice">
+        <DataField>SumProductPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumProductCostPrice">
+        <DataField>SumProductCostPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumInternalPrice">
+        <DataField>SumInternalPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumFees">
+        <DataField>SumFees</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumPrepay">
+        <DataField>SumPrepay</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumShipping">
+        <DataField>SumShipping</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumService">
+        <DataField>SumService</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumTotal">
+        <DataField>SumTotal</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumVAT">
+        <DataField>SumVAT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="SumAssemblyPrice">
+        <DataField>SumAssemblyPrice</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="eBestNo">
+        <DataField>eBestNo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Adresse2">
+        <DataField>Adresse2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Adresse1">
+        <DataField>Adresse1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ContactPerson">
+        <DataField>ContactPerson</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Phone">
+        <DataField>Phone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CustomerName">
+        <DataField>CustomerName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="CustomerMail">
+        <DataField>CustomerMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SoldByName">
+        <DataField>SoldByName</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="Postnr_">
+        <DataField>Postnr.</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PostSted">
+        <DataField>PostSted</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DraftValidTo">
+        <DataField>DraftValidTo</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="SellerPhone">
+        <DataField>SellerPhone</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SellerMail">
+        <DataField>SellerMail</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

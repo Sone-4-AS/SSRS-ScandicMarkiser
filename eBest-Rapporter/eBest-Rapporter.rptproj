@@ -51,14 +51,16 @@
   <ItemGroup>
     <DataSet Include="Easy-Ordre-LeveringDato.rsd" />
     <DataSet Include="Easy-VOrdreDetalj.rsd" />
+    <DataSet Include="eBest-DraftOrderHead.rsd" />
     <DataSet Include="eBest-OpenOrders.rsd" />
     <DataSet Include="eBest-OpenOrders_Sellers.rsd" />
+    <DataSet Include="eBest-SalesTerms.rsd" />
     <DataSet Include="eBest-SMSLog.rsd" />
     <DataSet Include="eBest-t_locations.rsd" />
     <DataSet Include="eBest-v_orders.rsd" />
+    <DataSet Include="eBest-v_order_line-from_id.rsd" />
     <DataSet Include="eBest-v_order_lines.rsd" />
-    <DataSet Include="eBest-v_order_line_-From_id.rsd" />
-    <DataSet Include="eBest_v_orders-From_id.rsd" />
+    <DataSet Include="eBest_v_orders-from_id.rsd" />
   </ItemGroup>
   <ItemGroup>
     <DataSource Include="eBest.rds" />
@@ -67,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Report Include="Leveringstider.rdl" />
+    <Report Include="MadeInGjøvik.rdl" />
     <Report Include="Monteringsrapport.rdl" />
     <Report Include="OpenOrders.rdl" />
     <Report Include="OrderbekreftelseOLD.rdl" />
@@ -74,6 +77,8 @@
     <Report Include="OrderLines.rdl" />
     <Report Include="Ordre-eBest-InfoEasy.rdl" />
     <Report Include="Ordrebekreftelse.rdl" />
+    <Report Include="OrdreTilbud.rdl" />
+    <Report Include="Sales_terms.rdl" />
     <Report Include="SMSLog.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />

@@ -4,14 +4,14 @@
     <Query>
       <DataSourceReference>eBest</DataSourceReference>
       <DataSetParameters>
-        <DataSetParameter Name="@OrderId">
+        <DataSetParameter Name="@eBestNo">
           <ReadOnly>false</ReadOnly>
           <Nullable>false</Nullable>
           <OmitFromQuery>false</OmitFromQuery>
           <rd:DbType>Object</rd:DbType>
         </DataSetParameter>
       </DataSetParameters>
-      <CommandText>SELECT *,DENSE_RANK() OVER(ORDER BY CASE WHEN EasySchemaId = 0 THEN [AId] ELSE EasySchemaId END DESC) AS R FROM dbo.v_order_lines WHERE OrderId = (@OrderId) ORDER BY R,Text</CommandText>
+      <CommandText>SELECT *,DENSE_RANK() OVER(ORDER BY CASE WHEN EasySchemaId = 0 THEN [AId] ELSE EasySchemaId END DESC) AS R FROM dbo.v_order_lines WHERE eBestNo= (@eBestNo) ORDER BY R,Text</CommandText>
     </Query>
     <Fields>
       <Field Name="Id">

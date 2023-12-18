@@ -57,8 +57,10 @@
     <DataSet Include="eBest-SalesTerms.rsd" />
     <DataSet Include="eBest-SMSLog.rsd" />
     <DataSet Include="eBest-t_locations.rsd" />
+    <DataSet Include="eBest-v_orders-from_ebest_no.rsd" />
     <DataSet Include="eBest-v_orders.rsd" />
     <DataSet Include="eBest-v_order_line-from_id.rsd" />
+    <DataSet Include="eBest-v_order_lines-from_ebest_no.rsd" />
     <DataSet Include="eBest-v_order_lines.rsd" />
     <DataSet Include="eBest_v_orders-from_id.rsd" />
   </ItemGroup>

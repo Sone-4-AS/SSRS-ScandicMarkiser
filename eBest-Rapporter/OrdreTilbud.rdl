@@ -7,9 +7,9 @@
     </am:CreatedBy>
     <am:UpdatedBy>
       <am:Name>SSDTRS</am:Name>
-      <am:Version>17.8.34322.80</am:Version>
+      <am:Version>17.8.34330.188</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2023-12-18T07:07:44.8841138Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2023-12-20T09:10:24.6841758Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
   <AutoRefresh>0</AutoRefresh>
@@ -896,7 +896,7 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>SoldByName</rd:DefaultName>
-                <Top>0.45861cm</Top>
+                <Top>0.44125cm</Top>
                 <Left>3.92917cm</Left>
                 <Height>0.6cm</Height>
                 <Width>7.90916cm</Width>
@@ -965,7 +965,7 @@
                 </Paragraphs>
                 <rd:DefaultName>SoldByName</rd:DefaultName>
                 <Top>0.99864cm</Top>
-                <Left>3.92918cm</Left>
+                <Left>3.9327cm</Left>
                 <Height>0.6cm</Height>
                 <Width>7.90916cm</Width>
                 <ZIndex>3</ZIndex>
@@ -1066,7 +1066,8 @@
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>Textbox12</rd:DefaultName>
-                <Left>18.50389cm</Left>
+                <Top>0.44125cm</Top>
+                <Left>16.03639cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.87545cm</Width>
                 <ZIndex>6</ZIndex>
@@ -1094,16 +1095,86 @@
                       </TextRun>
                     </TextRuns>
                     <Style>
-                      <TextAlign>Left</TextAlign>
+                      <TextAlign>Right</TextAlign>
                     </Style>
                   </Paragraph>
                 </Paragraphs>
                 <rd:DefaultName>DraftValidTo</rd:DefaultName>
-                <Top>0.6cm</Top>
-                <Left>18.50389cm</Left>
+                <Top>0.45861cm</Top>
+                <Left>18.08822cm</Left>
                 <Height>0.6cm</Height>
-                <Width>2.22272cm</Width>
+                <Width>2.29112cm</Width>
                 <ZIndex>7</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox21">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=First(Fields!eBestNo.Value, "Draft_orderHead")</Value>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                          <Format>d MMM yyyy</Format>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Right</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox12</rd:DefaultName>
+                <Top>0.99864cm</Top>
+                <Left>18.08822cm</Left>
+                <Height>0.6cm</Height>
+                <Width>2.29112cm</Width>
+                <ZIndex>8</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Textbox Name="Textbox27">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>Tilbuds nr.:</Value>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <FontWeight>Normal</FontWeight>
+                          <Format>d MMM yyyy</Format>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style />
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>Textbox12</rd:DefaultName>
+                <Top>0.99864cm</Top>
+                <Left>16.03639cm</Left>
+                <Height>0.6cm</Height>
+                <Width>1.87545cm</Width>
+                <ZIndex>9</ZIndex>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -1119,7 +1190,7 @@
             <Top>32.4379cm</Top>
             <Left>0.43918cm</Left>
             <Height>2.32779cm</Height>
-            <Width>20.7612cm</Width>
+            <Width>20.89688cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -2300,7 +2371,7 @@
               </Textbox>
             </ReportItems>
             <PageName>Sales terms</PageName>
-            <Top>42.96982cm</Top>
+            <Top>43.44607cm</Top>
             <Left>0.68963cm</Left>
             <Height>10.94107cm</Height>
             <Width>20.3389cm</Width>
@@ -2872,7 +2943,7 @@
               </Textbox>
             </ReportItems>
             <PageName>Last page</PageName>
-            <Top>53.94617cm</Top>
+            <Top>54.42242cm</Top>
             <Height>28.96623cm</Height>
             <Width>21.72891cm</Width>
             <ZIndex>6</ZIndex>
@@ -2886,7 +2957,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>9.0881cm</Width>
+                  <Width>8.88299cm</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.53006cm</Width>
@@ -2898,10 +2969,10 @@
                   <Width>1.83855cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.42062cm</Width>
+                  <Width>1.9907cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.5cm</Width>
+                  <Width>3.39241cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -3232,10 +3303,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ListPrice.Value * Fields!VAT.Value / 100</Value>
+                                  <Value>=Fields!ListPrice.Value * (1+(Fields!VAT.Value / 100))</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
-                                    <Format>#,0.00</Format>
+                                    <Format>n2</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -3309,7 +3380,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Price.Value * Fields!VAT.Value / 100</Value>
+                                  <Value>=Fields!Price.Value * (1+(Fields!VAT.Value / 100))</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>#,0.00</Format>
@@ -3347,7 +3418,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!LinePrice.Value * Fields!VAT.Value / 100</Value>
+                                  <Value>=Fields!LinePrice.Value * (1+(Fields!VAT.Value / 100))</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <Format>#,0.00</Format>
@@ -3478,7 +3549,7 @@
             <Top>39.13593cm</Top>
             <Left>1.03922cm</Left>
             <Height>1.90817cm</Height>
-            <Width>19.90378cm</Width>
+            <Width>20.16116cm</Width>
             <ZIndex>7</ZIndex>
             <Style>
               <Border>
@@ -3490,7 +3561,7 @@
             <Top>41.22614cm</Top>
             <Left>15.16795cm</Left>
             <Height>0cm</Height>
-            <Width>5.77505cm</Width>
+            <Width>6.03243cm</Width>
             <ZIndex>8</ZIndex>
             <Style>
               <Border>
@@ -3519,7 +3590,7 @@
             </Paragraphs>
             <rd:DefaultName>Textbox42</rd:DefaultName>
             <Top>41.40253cm</Top>
-            <Left>15.76661cm</Left>
+            <Left>15.13161cm</Left>
             <Height>0.73547cm</Height>
             <Width>2.5cm</Width>
             <ZIndex>9</ZIndex>
@@ -3540,8 +3611,9 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Herav MVA.:</Value>
+                    <Value>MVA:</Value>
                     <Style>
+                      <FontSize>9pt</FontSize>
                       <Format>#,0.00</Format>
                     </Style>
                   </TextRun>
@@ -3552,8 +3624,8 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox40</rd:DefaultName>
-            <Top>42.21208cm</Top>
-            <Left>15.77014cm</Left>
+            <Top>42.72714cm</Top>
+            <Left>15.13511cm</Left>
             <Height>0.6cm</Height>
             <Width>2.5cm</Width>
             <ZIndex>10</ZIndex>
@@ -3574,11 +3646,11 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Sum(Fields!DraftSum.Value, "v_orders")</Value>
+                    <Value>=First(Fields!DraftSum.Value, "v_orders")*1.25</Value>
                     <Style>
                       <FontSize>12pt</FontSize>
                       <FontWeight>Bold</FontWeight>
-                      <Format>'kr' 0.00</Format>
+                      <Format>'kr' #,0.00</Format>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -3589,9 +3661,9 @@
             </Paragraphs>
             <rd:DefaultName>DraftSum</rd:DefaultName>
             <Top>41.40253cm</Top>
-            <Left>18.443cm</Left>
+            <Left>17.80797cm</Left>
             <Height>0.73547cm</Height>
-            <Width>2.5cm</Width>
+            <Width>3.22056cm</Width>
             <ZIndex>11</ZIndex>
             <Style>
               <Border>
@@ -3611,9 +3683,11 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=Sum(Fields!DraftSum.Value, "v_orders") - (Sum(Fields!DraftSum.Value, "v_orders") / 1.25)</Value>
+                    <Value>=First(Fields!DraftSum.Value, "v_orders")*0.25</Value>
                     <Style>
-                      <Format>'kr' 0.00</Format>
+                      <FontSize>9pt</FontSize>
+                      <Format>'kr' #,0.00</Format>
+                      <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
                     </Style>
                   </TextRun>
                 </TextRuns>
@@ -3623,10 +3697,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>DraftSum1</rd:DefaultName>
-            <Top>42.21561cm</Top>
-            <Left>18.443cm</Left>
+            <Top>42.73067cm</Top>
+            <Left>17.80797cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
+            <Width>3.22056cm</Width>
             <ZIndex>12</ZIndex>
             <Style>
               <Border>
@@ -3639,8 +3713,80 @@
               <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
             </Style>
           </Textbox>
+          <Textbox Name="DraftSum2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!DraftSum.Value, "v_orders")</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                      <Format>'kr' #,0.00</Format>
+                      <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>DraftSum1</rd:DefaultName>
+            <Top>42.28644cm</Top>
+            <Left>17.80797cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.22056cm</Width>
+            <ZIndex>13</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <rd:FormatSymbolCulture>nb-NO</rd:FormatSymbolCulture>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox44">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Pris eks MVA:</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                      <Format>#,0.00</Format>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox40</rd:DefaultName>
+            <Top>42.28291cm</Top>
+            <Left>15.1436cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.5cm</Width>
+            <ZIndex>14</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>83.22153cm</Height>
+        <Height>83.67132cm</Height>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3648,7 +3794,7 @@
           <BackgroundColor>White</BackgroundColor>
         </Style>
       </Body>
-      <Width>21.91872cm</Width>
+      <Width>21.97426cm</Width>
       <Page>
         <PageHeight>30cm</PageHeight>
         <PageWidth>23cm</PageWidth>

@@ -19,7 +19,7 @@
         </DataSetParameter>
       </DataSetParameters>
       <CommandText>SELECT OrderNo, eBestNo, IsNull(OrderDate,0) As OrderDate, CustomerName, AssemblyAdr1, AssemblyAdrCity, AssemblyAdrPostalCode, IsNull(SumProvisjon,0) As SumProvisjon, IsNull(SumInternalPrice,0) AS StockValue,IsNull(SumProductPrice,0) + IsNull(SumAssemblyPrice,0) + IsNull(SumLift,0) + IsNull(SumFees,0) As NettoSum, 
- IsNull(SumAssemblyPrice,0) As SumAssembly, CurrentLocationNo, DeliveryDate, ColliCount, SoldByName, DeliverdDate FROM v_orders WHERE InvoiceNo IS NULL AND (IsNull(SumProductPrice,0) + IsNull(SumAssemblyPrice,0) + IsNull(SumLift,0) + IsNull(SumFees,0)) &lt;&gt; 0 AND OrderDate &gt; '2017.01.01' AND SellerNo IN (@Sellers) AND CurrentLocationNo IN (@Location)</CommandText>
+ IsNull(SumAssemblyPrice,0) As SumAssembly, CurrentLocationNo, DeliveryDate, ColliCount, SoldByName, DeliverdDate FROM v_orders WHERE InvoiceNo IS NULL AND (IsNull(SumProductPrice,0) + IsNull(SumAssemblyPrice,0) + IsNull(SumLift,0) + IsNull(SumFees,0)) &lt;&gt; 0 AND OrderDate &gt; '2020.01.01' AND SellerNo IN (@Sellers) AND CurrentLocationNo IN (@Location)</CommandText>
     </Query>
     <Fields>
       <Field Name="OrderNo">

@@ -3,7 +3,8 @@
   <DataSet Name="DataSet1">
     <Query>
       <DataSourceReference>eBest</DataSourceReference>
-      <CommandText>SELECT LocationName,LocationNo,LocationShortName,Id, CONCAT(Convert(VARCHAR(10),LocationNo),'. ',IsNull(LocationName,'-'),' (',IsNull(LocationShortName,'-'),')') AS DisplayName FROM t_locations WHERE IsNull(LocationNo,'') &lt;&gt; '' ORDER BY CASE WHEN LocationName IS NULL THEN 1 ELSE 0 END, Len(LocationNo),LocationName</CommandText>
+      <CommandText>SELECT LocationName,LocationNo,LocationShortName,Id, CONCAT(Convert(VARCHAR(10),IsNull(LocationNo,0)),'. ',IsNull(LocationName,'-'),' (',IsNull(LocationShortName,'-'),')') AS DisplayName FROM t_locations  
+ORDER BY CASE WHEN LocationName IS NULL THEN 1 ELSE 0 END, Len(LocationNo),LocationName</CommandText>
     </Query>
     <Fields>
       <Field Name="LocationName">

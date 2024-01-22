@@ -446,13 +446,17 @@
         <DataField>IncMVA</DataField>
         <rd:TypeName>System.Boolean</rd:TypeName>
       </Field>
-      <Field Name="ShowSalesPrice">
-        <DataField>ShowSalesPrice</DataField>
-        <rd:TypeName>System.Boolean</rd:TypeName>
-      </Field>
       <Field Name="ShowDetails">
         <DataField>ShowDetails</DataField>
         <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="ShowListPrice">
+        <DataField>ShowListPrice</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="PlannedAssemblyDate">
+        <DataField>PlannedAssemblyDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

@@ -38,7 +38,8 @@
         TDOT.PostSted,
         VO.DraftValidTo,
         VU.Phone AS SellerPhone,
-        VU.EMail AS SellerMail
+        VU.EMail AS SellerMail,
+        VO.ShowListprice
 FROM
         v_orders AS [VO]
     JOIN
@@ -157,6 +158,10 @@ WHERE
       <Field Name="SellerMail">
         <DataField>SellerMail</DataField>
         <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="ShowListPrice">
+        <DataField>ShowListprice</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>

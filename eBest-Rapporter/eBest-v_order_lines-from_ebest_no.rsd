@@ -162,9 +162,21 @@
         <DataField>eBestNo</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
+      <Field Name="Expr1">
+        <DataField>Expr1</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
       <Field Name="R">
         <DataField>R</DataField>
         <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="Expr2">
+        <DataField>Expr2</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="ShowDetails">
+        <DataField>ShowDetails</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
       </Field>
     </Fields>
   </DataSet>
